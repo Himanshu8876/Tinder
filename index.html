@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .detail-container{
+            background: linear-gradient(to bottom,transparent,rgba(0, 0, 0, 0.166));
+        }
+    </style>
+</head>
+<body>
+    <div class="w-full h-screen bg-black overflow-hidden font-['helvetica_now_display']">
+        <div class="image-container w-full h-screen relative">
+            <div class="maincard z-[3] w-[130%] absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-[130%]">
+                <img class="w-full h-full object-cover" src="" alt="">
+            </div>
+            <div class="incoming z-[2] w-[130%] h-[130%] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 absolute">
+                <img src="" class="w-full h-full object-cover" alt="">
+            </div>
+        </div>
+        <div class="w-full h-screen  absolute z-[4] top-0 left-0  flex flex-col justify-between">
+            <div class="navbar flex px-5 py-5 justify-between items-center ">
+                <div class="primg w-[4rem] h-[4rem] bg-red-600 overflow-hidden rounded-full">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVufGVufDB8fDB8fHww" alt="">
+                </div>
+                <h3 class="capitalize text-2xl font-medium tracking-tight">they liked you</h3>
+                <div class="chats relative flex items-center justify-center w-[4rem] h-[4rem] bg-white/20 rounded-full">
+                    <i class="fa-sharp fa-solid fa-comment"></i>
+                    <div class="badge flex items-center justify-center rounded-full top-0 right-0 -translate-y-[5px] translate-x-[3px] absolute w-6 h-6 bg-red-200">
+                        <h5 class="text-xs ">5</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-container">
+                <div class="details px-5 py-5 w-full">
+                    <div class="element location flex">
+                        <i class="w-[2rem] h-[2rem] flex items-center justify-center rounded-full fa-solid fa-arrow-turn-left-up"></i>
+                        <h2 class="text-3xl text-white">USA, California</h2>
+                    </div>
+                    <div class="element name flex gap-5 mt-3 text-white">
+                        <h2 class="text-6xl font-regular tracking-tighter">Victoria</h2>
+                        <h2 class=" text-6xl opacity-60 font-regular tracking-tighter">20</h2>
+                    </div>
+                    <div class="element tags flex gap-3 text-black">
+                        
+                        
+                    </div>
+                    <div class="element bio text-white/80 mt-5">
+                        <h2 class="text-2xl">Bio</h2>
+                        <p class="text-xl mt-3"></p>
+                    </div>
+                    <div class="element flex items-start mt-10 gap-1">
+                        <button class="deny py-3 rounded-xl w-1/2 bg-white">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <button class="accept py-3 rounded-xl w-1/2 bg-[#FC5149]">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
